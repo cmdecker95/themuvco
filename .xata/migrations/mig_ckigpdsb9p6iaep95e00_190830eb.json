@@ -1,0 +1,16 @@
+{
+  "id": "mig_ckigpdsb9p6iaep95e00",
+  "parentID": "mig_ckigpc524ks1qi4gdqng",
+  "checksum": "1:190830eba78ac96c194e9454a3d45bcbf24c04b9dd325ee634d7b140d15b9e5e",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "injury",
+          "type": "text"
+        },
+        "table": "prospect"
+      }
+    }
+  ]
+}

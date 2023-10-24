@@ -1,0 +1,16 @@
+{
+  "id": "mig_ckigp2sb9p6iaep95dg0",
+  "parentID": "mig_ckigp1kb9p6iaep95db0",
+  "checksum": "1:c8b86c6e49ba6f6bd96432ac4ed47109f607f820846cc8278c1d109f06495d73",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "last",
+          "type": "string"
+        },
+        "table": "prospect"
+      }
+    }
+  ]
+}

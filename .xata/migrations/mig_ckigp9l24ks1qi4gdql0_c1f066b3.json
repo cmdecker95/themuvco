@@ -1,0 +1,16 @@
+{
+  "id": "mig_ckigp9l24ks1qi4gdql0",
+  "parentID": "mig_ckigp5sb9p6iaep95dkg",
+  "checksum": "1:c1f066b322931cb1a75a907229b908ade8be4cb1f20403b241686952f534eafe",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "phone",
+          "type": "string"
+        },
+        "table": "prospect"
+      }
+    }
+  ]
+}

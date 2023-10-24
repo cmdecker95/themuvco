@@ -1,0 +1,11 @@
+{
+  "id": "mig_ckigotkb9p6iaep95d60",
+  "checksum": "1:f62c489752554d907038141f99edbb07c1eae6cb9fc33d12fbd33c4a5cbb98b8",
+  "operations": [
+    {
+      "addTable": {
+        "table": "prospect"
+      }
+    }
+  ]
+}

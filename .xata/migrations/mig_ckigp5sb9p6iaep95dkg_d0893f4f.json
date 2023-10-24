@@ -1,0 +1,16 @@
+{
+  "id": "mig_ckigp5sb9p6iaep95dkg",
+  "parentID": "mig_ckigp2sb9p6iaep95dg0",
+  "checksum": "1:d0893f4f48ebc26c96d9822c4a82606be97d981084859f456e3c1b41bcd05a85",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "email",
+          "type": "email"
+        },
+        "table": "prospect"
+      }
+    }
+  ]
+}

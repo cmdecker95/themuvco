@@ -1,0 +1,16 @@
+{
+  "id": "mig_ckigpc524ks1qi4gdqng",
+  "parentID": "mig_ckigp9l24ks1qi4gdql0",
+  "checksum": "1:93887bf1c63bf22eca8cad822cabdf729a825e44e962639c5a49f15a3c69ea12",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "difficulty",
+          "type": "text"
+        },
+        "table": "prospect"
+      }
+    }
+  ]
+}
