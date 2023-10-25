@@ -38,7 +38,7 @@
   };
 </script>
 
-<div class="px-6 py-4">
+<div class="px-6 md:px-12 py-4 md:max-w-4xl md:mx-auto">
   <header class="py-12">
     <h1 class="text-3xl font-bold mb-4">Join the MUV Collective</h1>
     <p class="text-lg leading-snug">

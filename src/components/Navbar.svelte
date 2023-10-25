@@ -8,12 +8,42 @@
 </script>
 
 <nav
-  class="fixed inset-0 z-10 bottom-auto flex items-center justify-between bg-white border-b-2 border-black px-6 py-4"
+  class={`fixed inset-0 z-20 bottom-auto flex items-center justify-between bg-white${
+    hidden ? "/50" : ""
+  } backdrop-blur-md border-b-2 border-black px-6 md:px-12 py-4`}
 >
   <a href="/" id="logo" class="translate-y-1"
     ><span class="text-4xl">MUV.</span></a
   >
-  <button on:click={toggleMenu}>
+  <div class="hidden md:flex flex-grow gap-8 items-center justify-end">
+    <a
+      href="/about"
+      class="border-b border-transparent hover:border-black text-lg duration-75"
+      >About</a
+    >
+    <a
+      href="/blog"
+      class="border-b border-transparent hover:border-black text-lg duration-75"
+      >Blog</a
+    >
+    <a
+      href="https://themuvco.square.site/s/shop"
+      class="border-b border-transparent hover:border-black text-lg duration-75"
+      >Shop</a
+    >
+
+    <a
+      href="/signin"
+      class="border-2 border-black bg-white outline -outline-offset-1 outline-transparent hover:outline-black hover:outline-offset-4 rounded-full px-4 py-2 text-center duration-75"
+      >Sign in</a
+    >
+    <a
+      href="/signup"
+      class="border-2 border-black outline -outline-offset-1 outline-transparent hover:outline-black hover:outline-offset-4 bg-black text-white rounded-full px-4 py-2 text-center duration-75"
+      >Sign up</a
+    >
+  </div>
+  <button on:click={toggleMenu} class="md:hidden">
     <svg
       xmlns="http://www.w3.org/2000/svg"
       xml:space="preserve"
@@ -37,24 +67,27 @@
 <aside
   class={`
   ${display} flex-col fixed inset-0 top-[74px] z-10
-  bg-white text-neutral-800 text-xl font-semibold`}
+  bg-neutral-200/25 backdrop-blur-md text-neutral-800 text-xl font-semibold`}
 >
   <div class="flex flex-col flex-grow gap-5 items-center justify-between">
     <div class="flex flex-col flex-grow w-full">
-      <a href="/about" class="border-b-2 border-black text-2xl px-6 py-4"
-        >About</a
+      <a
+        href="/about"
+        class="bg-white border-b-2 border-black text-2xl px-6 py-4">About</a
       >
-      <a href="/blog" class="border-b-2 border-black text-2xl px-6 py-4">Blog</a
+      <a
+        href="/blog"
+        class="bg-white border-b-2 border-black text-2xl px-6 py-4">Blog</a
       >
       <a
         href="https://themuvco.square.site/s/shop"
-        class="border-b-2 border-black text-2xl px-6 py-4">Shop</a
+        class="bg-white border-b-2 border-black text-2xl px-6 py-4">Shop</a
       >
     </div>
     <div class="flex justify-between gap-5 px-6 py-4 w-full">
       <a
         href="/signin"
-        class="border-2 border-black rounded-full px-3 py-2 w-full text-center flex-grow"
+        class="bg-white border-2 border-black rounded-full px-3 py-2 w-full text-center flex-grow"
         >Sign in</a
       >
       <a
