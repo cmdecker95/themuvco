@@ -1,0 +1,10 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { Image } from "astro:assets";
+import image from "../assets/image.webp"; // exists
+---
+
+<Layout title="Testing the Image component">
+  <!-- doesn't appear -->
+  <Image src={image} alt="an image" class="m-20" />
+</Layout>
