@@ -3,19 +3,20 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Home | The MUV Collective">
-  <header class="bg-white px-6 md:px-12 py-4 my-14">
-    <h1 class="flex flex-col gap-1 text-4xl md:text-6xl font-bold teko">
-      <span
-        class="opacity-0 text-[#303030] animate-[slide_0.5s_ease-out_forwards]"
-        >MUV Well.</span
-      >
-      <span
-        class="opacity-0 text-[#5e5e5e] animate-[slide_0.5s_0.25s_ease-out_forwards]"
+  <header
+    class="lg:grid lg:place-items-center bg-white px-6 lg:px-12 lg:w-screen py-4 my-14 lg:my-48"
+  >
+    <h1
+      class="flex flex-col gap-1 text-4xl lg:text-7xl font-bold teko lg:mx-auto"
+    >
+      <span class="opacity-0 animate-[slide_0.5s_ease-out_forwards]"
         >MUV Freely.</span
       >
-      <span
-        class="opacity-0 text-[#919191] animate-[slide_0.5s_0.5s_ease-out_forwards]"
+      <span class="opacity-0 animate-[slide_0.5s_0.25s_ease-out_forwards]"
         >MUV Often.</span
+      >
+      <span class="opacity-0 animate-[slide_0.5s_0.5s_ease-out_forwards]"
+        >MUV Well.</span
       >
     </h1>
     <a
@@ -24,42 +25,7 @@ import Layout from "../layouts/Layout.astro";
       >Join today</a
     >
   </header>
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    viewBox="0 0 1280 600"
-    class="translate-y-1"
-  >
-    <path
-      fill="#fff"
-      d="M0 43l116 72 117 90 116 60L465 73l117 144L698 67l117 126 116 36 116-96 117-78 116 96V0H0z"
-    >
-    </path>
-    <path
-      fill="#c6c6c6"
-      d="M0 133l116 60 117 84 116 66 116-162 117 120 116-120 117 60 116 72 116-126 117-72 116 126v-92l-116-96-117 78-116 96-116-36L698 65 582 215 465 71 349 263l-116-60-117-90L0 41z"
-    >
-    </path>
-    <path
-      fill="#919191"
-      d="M0 313l116 78 117 18 116 18 116-78 117 18 116 12 117-48 116 102 116-48 117-84 116 66V239l-116-126-117 72-116 126-116-72-117-60-116 120-117-120-116 162-116-66-117-84L0 131z"
-    >
-    </path>
-    <path
-      fill="#5e5e5e"
-      d="M0 403l116 66 117 24 116 6 116-102 117 60 116-6 117-90 116 96 116 12 117-108 116 48v-44l-116-66-117 84-116 48-116-102-117 48-116-12-117-18-116 78-116-18-117-18L0 311z"
-    >
-    </path>
-    <path
-      fill="#303030"
-      d="M0 529l116 6 117 18 116 24 116-42 117-18 116 42 117-48h116l116 24 117-24 116 6V407l-116-48-117 108-116-12-116-96-117 90-116 6-117-60-116 102-116-6-117-24L0 401z"
-    >
-    </path>
-    <path
-      d="M0 601h1280v-86l-116-6-117 24-116-24H815l-117 48-116-42-117 18-116 42-116-24-117-18-116-6z"
-    >
-    </path>
-  </svg>
-  <div class="bg-black text-white text-lg leading-loose px-6 md:px-12 py-12">
+  <div class="bg-black text-white text-lg leading-loose px-6 lg:px-12 py-12">
     <h2 class="text-3xl font-bold teko">What is the MUV Collective?</h2>
     <p class="py-4">
       At our core, we believe that life is too short to remain stagnant, always
@@ -82,23 +48,23 @@ import Layout from "../layouts/Layout.astro";
       existence.
     </p>
   </div>
+
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Teko:wght@700&display=swap");
+
+    .teko {
+      font-family: Teko, sans-serif;
+    }
+
+    @keyframes slide {
+      from {
+        transform: translateX(-100px);
+        opacity: 0;
+      }
+      to {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+  </style>
 </Layout>
-
-<style>
-  @import url("https://fonts.googleapis.com/css2?family=Teko:wght@700&display=swap");
-
-  .teko {
-    font-family: Teko, sans-serif;
-  }
-
-  @keyframes slide {
-    from {
-      transform: translateX(-100px);
-      opacity: 0;
-    }
-    to {
-      transform: translateX(0);
-      opacity: 1;
-    }
-  }
-</style>
