@@ -5,5 +5,40 @@ import image from "../assets/doctor-kyle.webp";
 ---
 
 <Layout title="Testing the Image component">
-  <Image src={image} alt="an image" class="m-20" />
+  <header class="grid grid-cols-2 gap-8 w-[768px] mx-auto">
+    <Image src={image} alt="an image" class="object-cover" />
+    <div class="flex flex-col gap-4">
+      <h1 class="text-4xl font-thin">
+        Meet <strong class="font-semibold">Dr. Kyle Womack</strong>
+      </h1>
+      <ul class="flex gap-3 text-xl uppercase text-neutral-700">
+        <li>PT</li>
+        <li>DPT</li>
+        <li>SFMA</li>
+        <li>FMS</li>
+        <li>CF-L2</li>
+      </ul>
+      <p class="text-lg leading-relaxed">
+        Dr Kyle earned his Doctor of Physical Therapy degree from the University
+        of Oklahoma. After graduating from Physical Therapy School, he and his
+        wife, Jenn, moved to Hawaii, and lived in Oahu and Kauai. While working
+        in a general Physical Therapy practice, he felt he wasn't able to fully
+        help the active adults he enjoyed working with the most, so he began his
+        own practice, where he would provide performance based physiotherapy for
+        CrossFitters and other active people in Hawaii. He soon began coaching
+        at Kauai CrossFit and fell in love with the combination of being able to
+        coach athletes, while helping them improve their movements and decrease
+        their pain. ​ In 2020, Kyle & Jenn decided to move their family to
+        Oklahoma City where they opened MŪV OKC. They love helping the Everyday
+        Athletes of the OKC metro and have enjoyed building relationships with
+        local businesses and gyms there. ​ After spending some time on the
+        mainland, Kyle, Jenn and their three daughters decided to make the move
+        back to Oahu. They are excited to be back on island and to build
+        relationships in the CrossFit and surfing community. ​ Dr Kyle's
+        athletic background includes CrossFit, Competitive Natural Bodybuilding,
+        Surfing, Hiking, Football, Basketball, Jeet Kune Do, Tae Kwon Do,
+        Motocross, and Wakeboarding.​
+      </p>
+    </div>
+  </header>
 </Layout>
