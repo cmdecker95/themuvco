@@ -1,0 +1,39 @@
+---
+import { ViewTransitions } from "astro:transitions";
+import Nav from "@components/Nav.astro";
+import Footer from "@components/Footer.astro";
+---
+
+<html lang="en">
+  <head>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <meta
+      property="og:title"
+      content="The MUV Collective | Performance Physio"
+    />
+    <meta
+      property="og:description"
+      content="The MUV Collective helps Everyday CrossFit Athletes solve their pain and mobility problems so they can continue they training and get back to hitting PR's."
+    />
+    <meta property="og:url" content="https://www.themuvco.com" />
+    <meta property="og:site_name" content="The MUV Collective" />
+    <meta property="og:type" content="website" />
+    <meta
+      name="keywords"
+      content="Active, Helping, Metro, OKC, People, activities, and, back, get, in, love., sports, the, they, to"
+    />
+    <script
+      src="https://kit.fontawesome.com/65044895a0.js"
+      crossorigin="anonymous"></script>
+    <title>The MUV Collective | Performance Physio</title>
+    <!-- <ViewTransitions /> -->
+  </head>
+  <body class="bg-zinc-200 text-zinc-800">
+    <Nav />
+    <slot />
+    <Footer />
+  </body>
+</html>
