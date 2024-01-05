@@ -1,70 +1,16 @@
 ---
-import Layout from "../layouts/Layout.astro";
+
 ---
 
-<Layout title="Home | The MUV Collective">
-  <header
-    class="lg:grid lg:place-items-center bg-white px-6 lg:px-12 lg:w-screen py-4 my-14 lg:my-48"
-  >
-    <h1
-      class="flex flex-col gap-1 text-4xl lg:text-7xl font-bold teko lg:mx-auto"
-    >
-      <span class="opacity-0 animate-[slide_0.5s_ease-out_forwards]"
-        >MUV Freely.</span
-      >
-      <span class="opacity-0 animate-[slide_0.5s_0.25s_ease-out_forwards]"
-        >MUV Often.</span
-      >
-      <span class="opacity-0 animate-[slide_0.5s_0.5s_ease-out_forwards]"
-        >MUV Well.</span
-      >
-    </h1>
-    <a
-      href="/signup"
-      class="opacity-0 bg-black text-white rounded-full px-6 py-3 mt-4 text-center text-xl block w-fit animate-[slide_0.5s_0.75s_ease-out_forwards]"
-      >Join today</a
-    >
-  </header>
-  <div class="bg-black text-white text-lg leading-loose px-6 lg:px-12 py-12">
-    <h2 class="text-3xl font-bold teko">What is the MUV Collective?</h2>
-    <p class="py-4">
-      At our core, we believe that life is too short to remain stagnant, always
-      pondering "What if..."
-    </p>
-    <p class="py-4">
-      Our journey revolves around five pillars:
-      <ol class="flex flex-col divide-y text-xl font-semibold uppercase">
-        <li class="py-4">Physio</li>
-        <li class="py-4">Fitness</li>
-        <li class="py-4">Family</li>
-        <li class="py-4">Faith</li>
-        <li class="py-4">Community</li>
-      </ol>
-    </p>
-    <p class="py-4">
-      Rooted in the vibrant landscapes of Oahu, Hawaii, our passion has
-      transcended boundaries, allowing us to forge connections with kindred
-      spirits from all corners of the globe through these very facets of our
-      existence.
-    </p>
-  </div>
-
-  <style>
-    @import url("https://fonts.googleapis.com/css2?family=Teko:wght@700&display=swap");
-
-    .teko {
-      font-family: Teko, sans-serif;
-    }
-
-    @keyframes slide {
-      from {
-        transform: translateX(-100px);
-        opacity: 0;
-      }
-      to {
-        transform: translateX(0);
-        opacity: 1;
-      }
-    }
-  </style>
-</Layout>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Astro</title>
+	</head>
+	<body>
+		<h1>Astro</h1>
+	</body>
+</html>
