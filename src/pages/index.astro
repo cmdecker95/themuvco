@@ -1,79 +1,74 @@
 ---
 import { Image } from "astro:assets";
+import CallToAction from "@components/CallToAction.astro";
 import Layout from "@layouts/Layout.astro";
 ---
 
 <Layout>
-  <main class="flex flex-col gap-32 py-32">
-    <header class="flex flex-col w-9/12 mx-auto">
-      <h1 class="text-center text-6xl font-bold leading-tight mb-6">
-        The MUV Collective
-      </h1>
-      <p class="text-center text-lg leading-loose max-w-[70ch] mx-auto mb-8">
-        We help CrossFit and Fitness Athletes with their MUVment and mobility so
-        they can stay in the gym and continue training without pain, stiffness,
-        or limitations.
+  {/* Hero Section */}
+  <header class="flex flex-col">
+    <h1 class="text-center text-6xl font-bold leading-tight mb-6">
+      The MUV Collective
+    </h1>
+    <p class="text-center text-lg leading-loose max-w-[70ch] mx-auto mb-8">
+      We help CrossFit and Fitness Athletes with their MUVment and mobility so
+      they can stay in the gym and continue training without pain, stiffness, or
+      limitations.
+    </p>
+    <CallToAction />
+  </header>
+
+  {/* 3-Step Process Section */}
+  <section>
+    <h2 class="text-4xl font-semibold text-center mb-6">Our 3-Step Process</h2>
+    <ol class="grid grid-cols-3 gap-8 justify-center">
+      <li class="rounded-lg px-8 py-10 border border-black/10">
+        <h3 class="font-bold uppercase mb-4">Step 1: Assess & Test</h3>
+        Get to the root of the problem and relieve pain and stiffness.
+      </li>
+      <li class="rounded-lg px-8 py-10 border border-black/10">
+        <h3 class="font-bold uppercase mb-4">Step 2: Fix Your MUVment</h3>
+        Solve the root cause of the problem and improve your movement patterns.
+      </li>
+      <li class="rounded-lg px-8 py-10 border border-black/10">
+        <h3 class="font-bold uppercase mb-4">
+          Step 3: Build Strength & Stability
+        </h3>
+        Teach you how to keep the problem from coming back and keep progressing.
+      </li>
+    </ol>
+  </section>
+
+  {/* About Section */}
+  <section class="flex gap-8">
+    <Image
+      src="/kyle.webp"
+      alt="Kyle Womack"
+      height={800}
+      width={500}
+      class="rounded-xl shadow-md"
+    />
+    <div>
+      <h2 class="text-4xl font-semibold mb-6">What is MUV??</h2>
+      <p class="leading-loose mb-12">
+        MUV was founded by Dr. Kyle Womack to bridge the gap between the
+        healthcare system and the gym. We focus on helping CrossFit, fitness,
+        weightlifting, runners, and surfers continue their training without pain
+        or need for unnecessary medications or surgeries. We help to improve any
+        movement related issue you may be having so you can get you back to your
+        activities fast, and come back better than before! We work in a hybrid
+        approach that allows us to be able to help our athletes both in-person,
+        as well as remotely.
       </p>
-      <a
-        href="/contact"
-        class="rounded-full px-8 py-3 bg-teal-500 text-zinc-200 hover:bg-teal-400 hover:text-zinc-100 duration-150 shadow-md hover:shadow-none focus:bg-teal-400 focus:text-zinc-100 focus:shadow-none w-fit mx-auto"
+      <p
+        class="leading-loose mb-16 border-l-2 border-teal-500 p-8 bg-gradient-to-r from-teal-500/10 to-10% to-zinc-100"
       >
-        Request a Consult Call
-      </a>
-    </header>
-    <section class="w-9/12 mx-auto">
-      <h2 class="text-4xl font-semibold text-center mb-6">
-        Our 3-Step Process
-      </h2>
-      <ol class="grid grid-cols-3 gap-8 justify-center">
-        <li class="rounded-lg px-8 py-10 border border-black/10">
-          <h3 class="font-bold uppercase mb-4">Step 1: Assess & Test</h3>
-          Get to the root of the problem and relieve pain and stiffness.
-        </li>
-        <li class="rounded-lg px-8 py-10 border border-black/10">
-          <h3 class="font-bold uppercase mb-4">Step 2: Fix Your MUVment</h3>
-          Solve the root cause of the problem and improve your movement patterns.
-        </li>
-        <li class="rounded-lg px-8 py-10 border border-black/10">
-          <h3 class="font-bold uppercase mb-4">
-            Step 3: Build Strength & Stability
-          </h3>
-          Teach you how to keep the problem from coming back and keep progressing.
-        </li>
-      </ol>
-    </section>
-    <section class="flex gap-8 w-9/12 mx-auto">
-      <Image
-        src="/kyle.webp"
-        alt="Kyle Womack"
-        height={800}
-        width={500}
-        class="rounded-xl shadow-md"
-      />
-      <div>
-        <h2 class="text-4xl font-semibold mb-6">What is MUV??</h2>
-        <p class="leading-loose mb-12">
-          MUV was founded by Dr. Kyle Womack to bridge the gap between the
-          healthcare system and the gym. We focus on helping CrossFit, fitness,
-          weightlifting, runners, and surfers continue their training without
-          pain or need for unnecessary medications or surgeries. We help to
-          improve any movement related issue you may be having so you can get
-          you back to your activities fast, and come back better than before! We
-          work in a hybrid approach that allows us to be able to help our
-          athletes both in-person, as well as remotely.
-        </p>
-        <p class="leading-loose mb-16">
-          <span class="font-bold">
-            "I want people to have freedom of movement to live a high
-            performance, pain-free lifestyle."
-          </span><br />Dr. Kyle Womack, PT, DPT, CF-L2
-        </p>
-        <a
-          href="/contact"
-          class="rounded-full px-8 py-3 bg-teal-500 text-zinc-200 hover:bg-teal-400 hover:text-zinc-100 duration-150 shadow-md hover:shadow-none focus:bg-teal-400 focus:text-zinc-100 focus:shadow-none w-fit mx-auto"
-          >Request a Consult Call
-        </a>
-      </div>
-    </section>
-  </main>
+        <span class="font-bold">
+          "I want people to have freedom of movement to live a high performance,
+          pain-free lifestyle."
+        </span><br /><span class="italic">Dr. Kyle Womack, PT, DPT, CF-L2</span>
+      </p>
+      <CallToAction />
+    </div>
+  </section>
 </Layout>

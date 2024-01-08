@@ -29,9 +29,11 @@ import Footer from "@components/Footer.astro";
       crossorigin="anonymous"></script>
     <title>The MUV Collective | Performance Physio</title>
   </head>
-  <body class="bg-zinc-200 text-zinc-800 text-lg">
+  <body class="bg-zinc-100 text-zinc-800 text-lg">
     <Nav />
-    <slot />
+    <main class="flex flex-col gap-32 py-32 w-9/12 mx-auto">
+      <slot />
+    </main>
     <Footer />
   </body>
 </html>
