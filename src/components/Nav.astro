@@ -3,7 +3,7 @@ import SocialLinks from "@components/SocialLinks.astro";
 ---
 
 <nav
-  class="flex align-center justify-between px-8 py-6 border-b border-black/10"
+  class="sticky top-0 bg-zinc-100 text-zinc-800 z-20 flex align-center justify-between px-8 py-6 border-b border-zinc-800"
 >
   <a
     href="/"
@@ -11,15 +11,7 @@ import SocialLinks from "@components/SocialLinks.astro";
   >
     MUV
   </a>
-  <SocialLinks />
-</nav>
-<nav
-  class="sticky top-0 bg-zinc-100 flex align-center justify-center py-4 border-b border-black/10"
->
   <ul class="flex align-center justify-between gap-10 uppercase font-semibold">
-    <a href="/" class="hover:text-teal-400 focus:text-teal-400 duration-150"
-      >Home</a
-    >
     <a
       href="/seminars"
       class="hover:text-teal-400 focus:text-teal-400 duration-150">Seminars</a
@@ -41,4 +33,5 @@ import SocialLinks from "@components/SocialLinks.astro";
       >Blog</a
     >
   </ul>
+  <SocialLinks />
 </nav>

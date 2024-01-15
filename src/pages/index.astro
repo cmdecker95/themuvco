@@ -6,69 +6,162 @@ import Layout from "@layouts/Layout.astro";
 
 <Layout>
   {/* Hero Section */}
-  <header class="flex flex-col">
-    <h1 class="text-center text-6xl font-bold leading-tight mb-6">
+  <header
+    class="relative flex flex-col align-center justify-center py-32 text-white"
+  >
+    <img
+      src="/muvco.webp"
+      alt="The MUV Collective"
+      class="absolute -z-20 min-h-full min-w-full object-cover filter brightness-50 saturate-0"
+    />
+    <h1
+      class="text-center text-8xl font-bold leading-tight mb-6 drop-shadow-lg uppercase"
+    >
       The MUV Collective
     </h1>
-    <p class="text-center text-lg leading-loose max-w-[70ch] mx-auto mb-8">
+    <p
+      class="text-center text-2xl tracking-wide leading-snug max-w-[70ch] mx-auto mb-16 drop-shadow"
+    >
       We help CrossFit and Fitness Athletes with their MUVment and mobility so
       they can stay in the gym and continue training without pain, stiffness, or
       limitations.
     </p>
-    <CallToAction />
+    <div class="mx-auto">
+      <CallToAction />
+    </div>
   </header>
 
   {/* 3-Step Process Section */}
-  <section>
-    <h2 class="text-4xl font-semibold text-center mb-6">Our 3-Step Process</h2>
-    <ol class="grid grid-cols-3 gap-8 justify-center">
-      <li class="rounded-lg px-8 py-10 border border-black/10">
-        <h3 class="font-bold uppercase mb-4">Step 1: Assess & Test</h3>
+  <section class="mx-32 mt-32">
+    <h2 class="text-5xl font-bold text-center mb-12">Our 3-Step Process</h2>
+    <ol class="grid grid-cols-3 gap-8 justify-center text-zinc-100">
+      <li
+        class="border border-zinc-800/10 bg-zinc-800 shadow-md rounded-lg px-8 py-10"
+      >
+        <span class="text-sm uppercase text-teal-400">Step 1</span>
+        <h3 class="font-bold text-3xl mb-6">Assess & Test</h3>
         Get to the root of the problem and relieve pain and stiffness.
       </li>
-      <li class="rounded-lg px-8 py-10 border border-black/10">
-        <h3 class="font-bold uppercase mb-4">Step 2: Fix Your MUVment</h3>
+      <li
+        class="border border-zinc-800/10 bg-zinc-800 shadow-md rounded-lg px-8 py-10"
+      >
+        <span class="text-sm uppercase text-teal-400">Step 2</span>
+        <h3 class="font-bold text-3xl mb-6">Fix Your MUVment</h3>
         Solve the root cause of the problem and improve your movement patterns.
       </li>
-      <li class="rounded-lg px-8 py-10 border border-black/10">
-        <h3 class="font-bold uppercase mb-4">
-          Step 3: Build Strength & Stability
-        </h3>
+      <li
+        class="border border-zinc-800/10 bg-zinc-800 shadow-md rounded-lg px-8 py-10"
+      >
+        <span class="text-sm uppercase text-teal-400">Step 3</span>
+        <h3 class="font-bold text-3xl mb-6">Build Strength & Stability</h3>
         Teach you how to keep the problem from coming back and keep progressing.
       </li>
     </ol>
+    <section class="my-12 flex justify-center align-center gap-8">
+      <a
+        href="/services"
+        class="rounded-full border border-zinc-800 hover:text-teal-400 focus:text-teal-400 hover:border-teal-400 focus:border-teal-400 px-8 py-3 text-xl duration-150 w-fit"
+        target="
+        _blank"
+      >
+        Read more about our services
+      </a>
+      <CallToAction />
+    </section>
   </section>
 
   {/* About Section */}
-  <section class="flex gap-8">
-    <Image
-      src="/kyle.webp"
-      alt="Kyle Womack"
-      height={800}
-      width={500}
-      class="rounded-xl shadow-md"
-    />
-    <div>
-      <h2 class="text-4xl font-semibold mb-6">What is MUV??</h2>
-      <p class="leading-loose mb-12">
-        MUV was founded by Dr. Kyle Womack to bridge the gap between the
-        healthcare system and the gym. We focus on helping CrossFit, fitness,
-        weightlifting, runners, and surfers continue their training without pain
-        or need for unnecessary medications or surgeries. We help to improve any
-        movement related issue you may be having so you can get you back to your
-        activities fast, and come back better than before! We work in a hybrid
-        approach that allows us to be able to help our athletes both in-person,
-        as well as remotely.
-      </p>
-      <p
-        class="leading-loose mb-16 border-l-2 border-teal-500 p-8 bg-gradient-to-r from-teal-500/10 to-10% to-zinc-100"
-      >
-        <span class="font-bold">
-          "I want people to have freedom of movement to live a high performance,
-          pain-free lifestyle."
-        </span><br /><span class="italic">Dr. Kyle Womack, PT, DPT, CF-L2</span>
-      </p>
-      <CallToAction />
+  <section class="mx-32 mt-32">
+    <h2 class="text-5xl font-bold text-center mb-12">About Us</h2>
+    <div class="flex gap-8">
+      <Image src="/kyle2.webp" alt="Kyle Womack" height={600} width={600} />
+      <div>
+        <p class="leading-loose mb-12">
+          MUV was founded by Dr. Kyle Womack to bridge the gap between the
+          healthcare system and the gym. We focus on helping CrossFit, fitness,
+          weightlifting, runners, and surfers continue their training without
+          pain or need for unnecessary medications or surgeries. We help to
+          improve any movement related issue you may be having so you can get
+          you back to your activities fast, and come back better than before! We
+          work in a hybrid approach that allows us to be able to help our
+          athletes both in-person, as well as remotely.
+        </p>
+        <p
+          class="leading-loose mb-16 border-l-2 border-teal-500 p-8 bg-gradient-to-r from-teal-500/10 to-10% to-zinc-100"
+        >
+          <span class="font-bold">
+            "I want people to have freedom of movement to live a high
+            performance, pain-free lifestyle."
+          </span><br /><span class="italic"
+            >Dr. Kyle Womack, PT, DPT, CF-L2</span
+          >
+        </p>
+        <section class="my-12 flex align-center gap-8">
+          <a
+            href="/about"
+            class="rounded-full border border-zinc-800 hover:text-teal-400 focus:text-teal-400 hover:border-teal-400 focus:border-teal-400 px-8 py-3 text-xl duration-150 w-fit"
+            target="
+        _blank"
+          >
+            Read more about us
+          </a>
+          <CallToAction />
+        </section>
+      </div>
     </div>
+  </section>
+
+  {/* Testimonial Section */}
+  <section class="my-32 mx-32">
+    <h2 class="text-5xl font-bold text-center mb-12">Testimonials</h2>
+    <div class="grid grid-cols-3 gap-8">
+      <section
+        class="border border-zinc-800/10 shadow-xl rounded-lg px-8 py-10"
+      >
+        <span class="text-sm uppercase text-teal-400">Cristy C.</span>
+        <h3 class="font-bold text-3xl mb-6">Dr. Kyle Transformed My Life!</h3>
+        Dr. Kyle is as honest and real as it gets! I was having lower back pain,
+        so went for a consult. Turns out, my issue was not what I expected, but was
+        a weak core. Who knew?! After a few sessions of retraining how to engage
+        my core, understanding key positioning for training, breathing techniques,
+        etc..... my back, mobility and overall sleep has made wonderful transformations.
+        These simple techniques that Dr. Kyle has shown are life altering. I highly
+        recommend to anyone.
+      </section>
+      <section
+        class="border border-zinc-800/10 shadow-xl rounded-lg px-8 py-10"
+      >
+        <span class="text-sm uppercase text-teal-400">Krystyn L.</span>
+        <h3 class="font-bold text-3xl mb-6">Better Shoulders, Better Lifts</h3>
+        I’ve been working with Dr. Kyle for almost a year now. He helped identify
+        the root causes of a bunch of things I had going on and had been working
+        with me to get them fixed. Since I started working with him, my lifts have
+        gotten better (be honest, it’s something we all want) and my movement patterns
+        have improved tremendously. I don’t have pain in my shoulders anymore and
+        that’s something that has been plaguing me for years now. I definitely recommend
+        seeing him!
+      </section>
+      <section
+        class="border border-zinc-800/10 shadow-xl rounded-lg px-8 py-10"
+      >
+        <span class="text-sm uppercase text-teal-400">Anne C.</span>
+        <h3 class="font-bold text-3xl mb-6">Honest and Effective Treatment</h3>
+        Excellent physical therapist and trainer. Really takes the time to work with
+        you, and spends the whole hour with you. Understands athletes, athletic injuries,
+        --and most importantly, how to fix them -- really well. More effective than
+        chiro treatments, which can go on seemingly forever sometimes.
+      </section>
+    </div>
+    <section class="my-12 flex justify-center align-center gap-8">
+      <a
+        href="/testimonials"
+        class="rounded-full border border-zinc-800 hover:text-teal-400 focus:text-teal-400 hover:border-teal-400 focus:border-teal-400 px-8 py-3 text-xl duration-150 w-fit"
+        target="
+        _blank"
+      >
+        Read more testimonials
+      </a>
+      <CallToAction />
+    </section>
   </section>
 </Layout>
