@@ -1,23 +1,25 @@
 {
-  "name": "marketing-site",
+  "name": "stale-star",
+  "type": "module",
   "version": "0.0.1",
-  "dependencies": {
-    "@astrojs/svelte": "^4.0.3",
-    "@astrojs/tailwind": "^5.0.1",
-    "@astrojs/vercel": "^5.0.2",
-    "@tailwindcss/forms": "^0.5.6",
-    "@xata.io/client": "^0.26.7",
-    "astro": "^3.4.0",
-    "resend": "^1.1.0",
-    "svelte": "^4.0.0",
-    "tailwindcss": "^3.0.24"
-  },
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
-    "build": "astro build",
+    "build": "astro check && astro build",
     "preview": "astro preview",
     "astro": "astro"
   },
-  "type": "module"
+  "dependencies": {
+    "@astrojs/check": "^0.3.4",
+    "@astrojs/svelte": "^5.0.3",
+    "@astrojs/tailwind": "^5.1.0",
+    "astro": "^4.1.0",
+    "prettier": "^3.1.1",
+    "prettier-plugin-astro": "^0.12.3",
+    "prettier-plugin-svelte": "^3.1.2",
+    "prettier-plugin-tailwindcss": "^0.5.10",
+    "svelte": "^4.2.8",
+    "tailwindcss": "^3.4.0",
+    "typescript": "^5.3.3"
+  }
 }
